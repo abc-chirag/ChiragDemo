@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KhT-wf-Tpe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="NGp-Py-JTr">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="wK8-Nm-Cfl" customClass="SecondViewController" customModule="ChiragDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vyb-XH-E5C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EQX-Tj-81l">
+                                <rect key="frame" x="5" y="111.5" width="404" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoS-oa-u0g">
+                                        <rect key="frame" x="0.0" y="0.0" width="101" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Date/Time" image="arrow.up.arrow.down" catalog="system">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onBtnDateTime:" destination="wK8-Nm-Cfl" eventType="touchUpInside" id="u2K-cH-PJ0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGg-dV-8Qh">
+                                        <rect key="frame" x="101" y="0.0" width="101" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Open" image="arrow.up.arrow.down" catalog="system">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onBtnOpen:" destination="wK8-Nm-Cfl" eventType="touchUpInside" id="Vpi-hI-agW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPD-5g-hps">
+                                        <rect key="frame" x="202" y="0.0" width="101" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="High" image="arrow.up.arrow.down" catalog="system">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onBtnHigh:" destination="wK8-Nm-Cfl" eventType="touchUpInside" id="RnJ-VM-mts"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQA-0S-n36">
+                                        <rect key="frame" x="303" y="0.0" width="101" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Low" image="arrow.up.arrow.down" catalog="system">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onBtnLow:" destination="wK8-Nm-Cfl" eventType="touchUpInside" id="0Hs-XU-t6v"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NYC-mg-61p"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Symbol:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BT9-4q-uIf">
+                                <rect key="frame" x="20" y="64" width="62" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Bz-z2-1In">
+                                <rect key="frame" x="102" y="57.5" width="292" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oqF-ba-1LX">
+                                <rect key="frame" x="5" y="151.5" width="404" height="651.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OG4-dq-Ibg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Bz-z2-1In" firstAttribute="centerY" secondItem="BT9-4q-uIf" secondAttribute="centerY" id="0tN-ka-vHP"/>
+                            <constraint firstItem="EQX-Tj-81l" firstAttribute="leading" secondItem="OG4-dq-Ibg" secondAttribute="leading" constant="5" id="1tw-6l-wJc"/>
+                            <constraint firstItem="EQX-Tj-81l" firstAttribute="top" secondItem="4Bz-z2-1In" secondAttribute="bottom" constant="20" id="7aW-9X-8yT"/>
+                            <constraint firstItem="OG4-dq-Ibg" firstAttribute="trailing" secondItem="oqF-ba-1LX" secondAttribute="trailing" constant="5" id="Ij4-T6-r0r"/>
+                            <constraint firstItem="BT9-4q-uIf" firstAttribute="top" secondItem="OG4-dq-Ibg" secondAttribute="top" constant="20" id="TiN-Bc-TNz"/>
+                            <constraint firstItem="oqF-ba-1LX" firstAttribute="leading" secondItem="OG4-dq-Ibg" secondAttribute="leading" constant="5" id="UMs-Yq-UpK"/>
+                            <constraint firstItem="BT9-4q-uIf" firstAttribute="leading" secondItem="OG4-dq-Ibg" secondAttribute="leading" constant="20" id="YOm-66-aHt"/>
+                            <constraint firstItem="4Bz-z2-1In" firstAttribute="leading" secondItem="BT9-4q-uIf" secondAttribute="trailing" constant="20" id="cqs-uC-aGn"/>
+                            <constraint firstItem="oqF-ba-1LX" firstAttribute="top" secondItem="EQX-Tj-81l" secondAttribute="bottom" id="f7v-Gb-YbW"/>
+                            <constraint firstItem="OG4-dq-Ibg" firstAttribute="bottom" secondItem="oqF-ba-1LX" secondAttribute="bottom" constant="10" id="k3u-Bg-Fx4"/>
+                            <constraint firstItem="OG4-dq-Ibg" firstAttribute="trailing" secondItem="4Bz-z2-1In" secondAttribute="trailing" constant="20" id="xE5-hi-51r"/>
+                            <constraint firstItem="OG4-dq-Ibg" firstAttribute="trailing" secondItem="EQX-Tj-81l" secondAttribute="trailing" constant="5" id="zqn-7E-ArO"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="NvY-sr-1fz"/>
+                    <connections>
+                        <outlet property="tblData" destination="oqF-ba-1LX" id="Pph-4Q-hVH"/>
+                        <outlet property="txtSymbol" destination="4Bz-z2-1In" id="e0f-K3-Zjt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zhy-Sp-pir" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994" y="-545"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="ChiragDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="API Key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9wp-Dm-x6P">
+                                <rect key="frame" x="20" y="64" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zTm-MO-OdA">
+                                <rect key="frame" x="20" y="118" width="374" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HW2-c9-21F">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="45"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Compact"/>
+                                        <connections>
+                                            <action selector="compactClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rol-2o-jOQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSo-3M-WV9">
+                                        <rect key="frame" x="187" y="0.0" width="187" height="45"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Full"/>
+                                        <connections>
+                                            <action selector="fullClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MfK-4R-9bA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="xAk-fK-IPJ"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jHQ-Af-bWt">
+                                <rect key="frame" x="20" y="183" width="374" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNc-1z-MPG">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="45"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="1 min"/>
+                                        <connections>
+                                            <action selector="min1Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tbD-r8-id4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZv-wH-LEE">
+                                        <rect key="frame" x="75" y="0.0" width="74.5" height="45"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="5 min"/>
+                                        <connections>
+                                            <action selector="min5Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7dY-vW-KCu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tf7-Wb-Zmh">
+                                        <rect key="frame" x="149.5" y="0.0" width="75" height="45"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="15 min"/>
+                                        <connections>
+                                            <action selector="min15Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nuz-ax-vr1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyS-dM-jWr">
+                                        <rect key="frame" x="224.5" y="0.0" width="74.5" height="45"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="30 min"/>
+                                        <connections>
+                                            <action selector="min30Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6CG-GI-9k2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lha-CK-wUz">
+                                        <rect key="frame" x="299" y="0.0" width="75" height="45"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="60 min"/>
+                                        <connections>
+                                            <action selector="min60Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kvf-Bn-mkP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="HFn-3f-x3j"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOU-O5-PpD">
+                                <rect key="frame" x="165.5" y="278" width="83" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="g9c-PO-Xdq"/>
+                                    <constraint firstAttribute="height" constant="40" id="ywD-j3-ydp"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Compare">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBtnCompare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k9z-0u-1Ok"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zTm-MO-OdA" secondAttribute="trailing" constant="20" id="0W5-ZG-CWY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9wp-Dm-x6P" secondAttribute="trailing" constant="20" id="0vR-7p-1o0"/>
+                            <constraint firstItem="zTm-MO-OdA" firstAttribute="top" secondItem="9wp-Dm-x6P" secondAttribute="bottom" constant="20" id="1Zu-Ql-Vnw"/>
+                            <constraint firstItem="IOU-O5-PpD" firstAttribute="top" secondItem="jHQ-Af-bWt" secondAttribute="bottom" constant="50" id="3UJ-ob-Uhs"/>
+                            <constraint firstItem="9wp-Dm-x6P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="FSP-UZ-RjK"/>
+                            <constraint firstItem="jHQ-Af-bWt" firstAttribute="top" secondItem="zTm-MO-OdA" secondAttribute="bottom" constant="20" id="Ikp-uG-gws"/>
+                            <constraint firstItem="IOU-O5-PpD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UAK-ck-rP2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jHQ-Af-bWt" secondAttribute="trailing" constant="20" id="UQK-Fk-Ndz"/>
+                            <constraint firstItem="jHQ-Af-bWt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XYt-w9-D7K"/>
+                            <constraint firstItem="zTm-MO-OdA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Y4m-k8-fyG"/>
+                            <constraint firstItem="9wp-Dm-x6P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d8U-5K-mBO"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="power" catalog="system" id="Zxt-fJ-RCH"/>
+                    <connections>
+                        <outlet property="btn15min" destination="Tf7-Wb-Zmh" id="AyV-gG-niJ"/>
+                        <outlet property="btn1min" destination="XNc-1z-MPG" id="hVC-Wv-1Ft"/>
+                        <outlet property="btn30min" destination="dyS-dM-jWr" id="Dpj-On-VZv"/>
+                        <outlet property="btn5min" destination="jZv-wH-LEE" id="RxB-fL-hoa"/>
+                        <outlet property="btn60min" destination="Lha-CK-wUz" id="Oc2-LR-CYk"/>
+                        <outlet property="btnCompact" destination="HW2-c9-21F" id="puH-Xx-Cd2"/>
+                        <outlet property="btnFull" destination="ZSo-3M-WV9" id="ggY-Qq-Lsn"/>
+                        <outlet property="txtApiKey" destination="9wp-Dm-x6P" id="7GS-I8-xOg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1067" y="121"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="a8M-De-iuf">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="KhT-wf-Tpe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SIO-Zh-iaJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wK8-Nm-Cfl" kind="relationship" relationship="viewControllers" id="QN0-D4-3dh"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="sDN-Zt-2Uc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2IX-uq-wqn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="-64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.up.arrow.down" catalog="system" width="128" height="98"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="power" catalog="system" width="128" height="124"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
